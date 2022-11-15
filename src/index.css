@@ -113,6 +113,22 @@ li {
   height: 80vh;
 }
 
+.listOfOneCocktails {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  justify-content: space-evenly;
+  align-self: center;
+  background-image: linear-gradient(to top,
+  #3F0D12,
+  #A71D31
+  );
+  width: 30vw;
+  height: 60vh;
+
+
+}
+
 .imageOfCurrentlySelectedCocktail {
   align-self: center;
   height: 15vh;
@@ -129,8 +145,9 @@ li {
   align-self: center;
   overflow: hidden;
   background-color: beige;
-  border-radius: 5px;
-  transition: 0.3s
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 2px solid;
 }
 
 .cocktailCardContainer:hover {
@@ -175,11 +192,20 @@ li {
   font-weight: 200;
   font-size: 15px;
   display: block;
-  margin-top: 4vh;
+  margin-top: 1vh;
   text-align: center;
   font-style: italic;
 }
 
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.heartMeContainer {
+  align-self: center;
+}
 
 
 .leftArrow {
@@ -355,7 +381,74 @@ ul.active {
   background-color: grey;
 }
 
-.landingPage {
-  background-color: red;;
-  color: red;
+.landingPageContainer {
+  display: flex;
+  flex-direction: column;;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to top,
+  #3F0D12,
+  #A71D31
+  );
+  align-self: center;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  text-align: center;
+  border:3px solid;
+  width: 50vw;
+  height: 40vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  border-radius: 5px;
 }
+
+.landingPageTextContainer {
+  text-align: center;
+  height: 15vh;
+  width: 32vw;
+  align-self: center;
+  background-color: beige;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: 3px solid;
+
+}
+
+#landingPageText {
+  font-family: 'Times New Roman',;
+  font-weight: 400;
+}
+
+.startButton {
+  font-size: 30px;
+  align-self: center;
+  height: 10vh;
+  width: 20vw;
+  border-radius: 5px;
+  background-color: beige;
+}
+
+.startButton:hover {
+  background-color: grey;
+}
+
+.divider {
+  width: 100%;
+  border: 0.5px dotted;
+}
+
+#anotherOneButton {
+  font-size: 20px;
+  align-self: center;
+  width: 8vw;
+  height: 5vh;
+
+}
+
+.heartMeContainer {
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  cursor: pointer;
+};
+

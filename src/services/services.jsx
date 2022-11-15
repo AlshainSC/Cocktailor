@@ -14,7 +14,7 @@ const BASEURL = 'http://localhost:3002/'
 //   }
 // }
 
-exports.getAllCocktails = async () => {
+export async function getAllCocktails () {
   try {
   const result = await fetch(BASEURL)
   const data = await result.json()
