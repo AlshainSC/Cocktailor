@@ -7,6 +7,7 @@ body {
   background-color: #fa9b61;
   background-image: linear-gradient(0deg, #fa9b61 0%, #f71c1c 100%);
   overflow: hidden;
+  font-family: Helvetica;
 
 }
 
@@ -18,9 +19,17 @@ h6 {
   margin: 0;
 }
 
+li {
+  margin: 0;
+  font-size: 10px;
+}
+
+
+
 .mainContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   height: 92vh;
   width: 100vw;
@@ -32,6 +41,7 @@ h6 {
 
 .navBar {
   display: flex;
+  justify-content: space-between;
   height:8vh;
   width:100vw;
   background-color: black;
@@ -51,14 +61,13 @@ h6 {
   margin-top: 2vh;
 }
 
-.hamburger {
-  align-self: center;
-  position: relative;
-}
+
 
 .hamburgerButton {
   background-color: transparent;
   border: 0;
+  padding:0;
+  margin-left: 1vw;
 }
 
 .hamburgerButton:hover {
@@ -104,66 +113,74 @@ h6 {
   height: 80vh;
 }
 
-.cocktailCard {
-
-}
-
-.cocktailCardImageContainer{
-  margin: 2px;
-  align-self: flex-start;
-  display: flex;
-  justify-content: center;
-  white-space: nowrap;
-  width: 8vw;
-  height:20vh;
-  border-radius: 20px;
-  border: 1px solid;
-
-}
-
 .imageOfCurrentlySelectedCocktail {
   align-self: center;
-  height: 100%;
-  width: 100%;
+  height: 15vh;
+  width: 8vw;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 5px;
+  border: 3px solid;
 }
 
-.leftCocktail {
-  border: 3px solid;
+.cocktailCardContainer {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: beige;
-  height: 40vh;
-  width: 20vw;
-  align-self: flex-end;
-  border-radius: 10px;
-
-}
-
-.middleCocktail {
-  border: 3px solid;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: beige;
-  height: 40vh;
-  width: 20vw;
+  height: 15.55vh;
+  width: 8.3vw;
   align-self: center;
-  border-radius: 10px;
+  overflow: hidden;
+  background-color: beige;
+  border-radius: 5px;
+  transition: 0.3s
 }
-.rightCocktail {
-  border: 3px solid;
+
+.cocktailCardContainer:hover {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  background-color: beige;
   height: 40vh;
   width: 20vw;
-  align-self: flex-end;
-  border-radius: 10px;
+  transition: 0.3s;
+  align-items: center;
 }
+
+
+
+.cocktailCardWithoutTitle {
+  align-self: center;
+}
+
+.cocktailCardTextContainer {
+  width: 15vw;
+
+
+}
+
+.cocktailInfo {
+  text-align: left;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: white;
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px;
+
+
+}
+
+.imageAndDescriptionContainer {
+  display: flex;
+}
+
+#cocktailDescription {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 200;
+  font-size: 15px;
+  display: block;
+  margin-top: 4vh;
+  text-align: center;
+  font-style: italic;
+}
+
+
 
 .leftArrow {
   margin-top: 5vh;
@@ -189,43 +206,156 @@ h6 {
   cursor: pointer;
 }
 
-.test {
+.hamburger {
+  align-self: center;
+}
+
+.dropdown-wrapper {
+  margin: 0;
+  display: flex;
+}
+
+.dropdown-wrapper .dropdown {
+  background: #fff;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  font-family: "Open Sans";
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  background-color: white;
+}
+
+.navBarListItems {
   color: white;
 }
 
-.menu {
-  position: absolute;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to top,
+  #3F0D12,
+  #A71D31
+  );
+  align-self: center;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  text-align: center;
+  border:1px solid;
+  width: 50vw;
+  height: 40vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
   border-radius: 5px;
-  width: 15vw;
-  border: 1px solid;
 }
 
-.menu > li {
-  margin: 2px;
-  border: 1px solid;
-  border-radius: 5px;
-  background-color: white;
-
-}
-
-.menu > li:hover {
-  background-color: lightgray;
-}
-
-.menu > li > button {
-  width: 100%;
-  height: 100%;
-  text-align: left;
-
-
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 5px;
-  margin: 0;
-  font: inherit;
+.singularTag {
   cursor: pointer;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 4vh;
+  width: min-content;
+  margin: 5px;
+  text-align: center;
+}
+
+.singularTag h1 {
+  padding: 1px 5px;
+}
+
+.pressedTag {
+  cursor: pointer;
+  background-color: grey;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 4vh;
+  width: min-content;
+  margin: 5px;
+  text-align: center;
+}
+
+.pressedTag h1 {
+  padding: 1px 5px;
+}
+
+.tagButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20vh;
+}
+
+#cocktailName {
+
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  margin-bottom: 10px;
+
+}
+
+#recipe {
+  margin-bottom: 5px;
+}
+
+#mixItUp {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 2vh;
+  width: 10vw;
+  height: 8vh;
+}
+
+
+
+
+ul.notActive {
+  margin-top: 2.5vh;
+  margin-left: 1vw;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  height: 0px;
+  overflow: auto;
+  transition: height 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid;
+}
+
+ul.active {
+  margin-top: 2.5vh;
+  margin-left: 1vw;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  height: 10vh;
+  overflow: auto;
+  transition: height 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid;
+
+
+
+}
+
+.navBarListItems {
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: grey;
+}
+
+.landingPage {
+  background-color: red;;
+  color: red;
 }

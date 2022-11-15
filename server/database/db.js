@@ -27,7 +27,7 @@ const Cocktails = [
     spirits: ['bourbon', 'rye', 'aged spirit'],
     dominant_flavours: ['orange', 'whiskey'],
     type: 'classic cocktail',
-    flavour_notes: ['sweet', 'zesty', 'bitter', 'strong'],
+    flavour_notes: ['sweet', 'zesty', 'bitter', 'strong, orange, whiskey'],
     preparation: 'built & stirred',
     recipe: {
       sour: '',
@@ -46,7 +46,7 @@ const Cocktails = [
     spirits: ['lemon vodka', 'Cointreau', 'triple sec'],
     dominant_flavours: ['lemon', 'lime', 'orange'],
     type: 'martini',
-    flavour_notes: ['zesty', 'tart', 'refreshing', 'sour', 'sweet'],
+    flavour_notes: ['zesty', 'tart', 'refreshing', 'sour', 'sweet', 'lemon', 'lime', 'orange'],
     preparation: 'shaken',
     recipe: {
       sour: '25 ml lime juice',
@@ -60,10 +60,11 @@ const Cocktails = [
   },
   {
     name: 'Classic Daiquiri',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668426233/CocktailPictures/Daiquiri_vypiag.jpg',
     spirits: ['rum', 'dark rum'],
     dominant_flavours: ['lime', 'rum'],
     type: 'daiquiri',
-    flavour_notes: ['sour', 'sweet'],
+    flavour_notes: ['sour', 'sweet', 'lime', 'rum'],
     preparation: 'shaken',
     recipe: {
       sour: '25 ml lime juice',
@@ -73,7 +74,98 @@ const Cocktails = [
       garnish: 'lime wheel or zest'
     },
     glass: 'martini glass',
-
+    description: 'Another classic, simple mixture of lime rum and sugar, the quintessential beach cocktail'
+  },
+  {
+    name: 'French 75',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668426042/CocktailPictures/French75_rh018t.jpg',
+    spirits: ['gin'],
+    dominant_flavours: ['lemon', 'champagne'],
+    type: 'champagne cocktail',
+    flavour_notes: ['refreshing', 'sweet', 'zesty', 'lemon', 'champagne'],
+    preparation: 'shaken & topped up',
+    recipe: {
+      sour: '50 ml lemon juice',
+      sweet: '20 ml simple syrup',
+      strong: '50 ml gin',
+      weak: 'champagne top up',
+      garnish: 'lemon zest'
+    },
+    glass: 'coupette',
+    description: 'Famously named after the French 75 Field Gun, this Cocktail packs a huge punch while being deceptively sweet and refreshing '
+  },
+  {
+    name: 'Margarita',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668446525/CocktailPictures/Margarita_dszgjg.jpg',
+    spirits: ['tequila'],
+    dominant_flavours: ['lime', 'tequila'],
+    type: 'martina cocktail',
+    flavour_notes: ['sour', 'strong', 'salty', 'refreshing'],
+    preparation: 'shaken & strained',
+    recipe: {
+      sour: '35 ml Lime Juice',
+      sweet: '2 ml Simple Syrup',
+      strong: '50 ml Tequila & 25 ml Cointreau',
+      weak: 'N/A',
+      garnish: 'Lime Wheel or Zest'
+    },
+    glass: 'Coupette',
+    description: 'A mexican staple, using very little sugar to make a relatively dry low-cal drink that packs a punch - perfect for a hot day'
+  },
+  {
+    name: 'Tom Collins',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668455131/CocktailPictures/TomCollins_tgsxeg.webp',
+    spirits: ['gin'],
+    dominant_flavours: ['lemon', 'gin'],
+    type: 'Longdrink',
+    flavour_notes: ['sour', 'lemon', 'gin', 'refreshing'],
+    preparation: 'Shaken & Topped Up',
+    recipe: {
+      sour: '25 ml Lemon Juice',
+      sweet: '20 ml Simple Syrup',
+      strong: '50 ml Gin',
+      weak: 'Soda Top Up',
+      garnish: 'Lemon Zest & Cherry'
+    },
+    glass: 'Highball',
+    description: 'A Gin lemonade, timeless, spritzy, fun'
+  },
+  {
+    name: 'Amaretto Sour',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668455421/CocktailPictures/AmarettoSour_hy9e88.webp',
+    spirits: ['Amaretto'],
+    dominant_flavours: ['lemon', 'Amaretto'],
+    type: 'Sour',
+    flavour_notes: ['sour', 'sweet', 'lemon', 'eggwhite', 'dessert', 'amaretto'],
+    preparation: 'Shaken',
+    recipe: {
+      sour: '25 ml Lemon Juice',
+      sweet: '20 ml Simple Syrup',
+      strong: '50 ml Amaretto',
+      weak: 'Eggwhite',
+      garnish: 'Lemon Zest & Amarena Cherry'
+    },
+    glass: 'Rocks Glass',
+    description: 'The Go-To for dessert cocktails, creamy yet zesty with a nice marcipan finish'
+  },
+  {
+    name: 'Whiskey Sour',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668455848/CocktailPictures/WhiskeySour_g74fxw.webp',
+    spirits: ['Whiskey'],
+    dominant_flavours: ['lemon', 'Whiskey'],
+    type: 'Sour',
+    flavour_notes: ['sour', 'sweet', 'lemon', 'eggwhite', 'whiskey'],
+    preparation: 'Shaken',
+    recipe: {
+      sour: '25 ml Lemon Juice',
+      sweet: '20 ml Simple Syrup',
+      strong: '50 ml Whiskey',
+      weak: 'Eggwhite',
+      garnish: 'Lemon Zest & Bitters'
+    },
+    glass: 'Rocks Glass',
+    description: 'One of the most popular cocktails out there, simply delicious and can be had with almost any whiskey, try a peated whiskey for a bit more kick!'
   }
+
 
 ]
