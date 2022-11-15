@@ -165,7 +165,221 @@ const Cocktails = [
     },
     glass: 'Rocks Glass',
     description: 'One of the most popular cocktails out there, simply delicious and can be had with almost any whiskey, try a peated whiskey for a bit more kick!'
+  },
+  {
+    name: 'Basil Smash',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668539349/CocktailPictures/BasilSmash_opeyjw.jpg',
+    spirits: ['Gin'],
+    dominant_flavours: ['lemon', 'basil', 'gin'],
+    type: 'Sour',
+    flavour_notes: ['sour', 'sweet', 'lemon', 'basil', 'gin'],
+    preparation: 'Shaken',
+    recipe: {
+      sour: '25 ml Lemon Juice',
+      sweet: '20 ml Basil Syrup',
+      strong: '50 ml Gin',
+      weak: 'N/A',
+      garnish: 'Lemon Zest & Basil Leaf'
+    },
+    glass: 'Rocks Glass',
+    description: 'The new kid on the block, hugely popular cocktail made of simple ingredients, basil and lemon are an amazing combination!'
+  },
+  {
+    name: 'Sweet Manhattan',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668541412/CocktailPictures/SweetManhattan_ka98hr.jpg',
+    spirits: ['Whiskey', 'Sweet Vermouth', 'Bitters'],
+    dominant_flavours: ['whiskey', 'vermouth', 'bitters'],
+    type: 'Martini Cocktail',
+    flavour_notes: ['strong', 'tart', 'vermouth', 'whiskey'],
+    preparation: 'Stirred',
+    recipe: {
+      sour: 'N/A',
+      sweet: '15 ml Sweet Vermouth',
+      strong: '50 ml Whiskey',
+      weak: 'Bitters',
+      garnish: 'Orange Zest and Cherry'
+    },
+    glass: 'Coupette',
+    description: 'Another traditional cocktail, first served in New York, strong a little bit bitter and oh so delicious.'
+  },
+  {
+    name: 'Pornstar Martini',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668542128/CocktailPictures/PornstarMartini_coosul.jpg',
+    spirits: ['Vanilla Vodka', 'Passoa'],
+    dominant_flavours: ['Passion Fruit', 'Vanilla'],
+    type: 'Martini Cocktail',
+    flavour_notes: ['fruity', 'Passion Fruit', 'delicious', 'vanilla'],
+    preparation: 'Shaken',
+    recipe: {
+      sour: '25 ml Lime Juice',
+      sweet: '10 ml Vanilla Syrup',
+      strong: '50 ml Vanilla Vodka',
+      weak: '50ml Passion Fruit Syrup',
+      garnish: 'Half a Passion Fruit and a Shot Glass of Champagne'
+    },
+    glass: 'Coupette',
+    description: 'The guilty pleasure amongst bar-goers, bright orange, tropical and easy to enjoy, one of my favourites.'
+  },
+  {
+    name: 'Pina Colada',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668544485/CocktailPictures/PinaColada_ukmnrg.webp',
+    spirits: ['Rum', 'Malibu'],
+    dominant_flavours: ['Pineapple', 'Coconut'],
+    type: 'Punch',
+    flavour_notes: ['fruity', 'Pineapple', 'Creamy', 'Coconut'],
+    preparation: 'Blended',
+    recipe: {
+      sour: '20 ml Lime Juice',
+      sweet: '20 ml Simple Syrup',
+      strong: '50 ml Rum',
+      weak: '50ml Pineapple Juice & 20ml Pineapple Puree',
+      garnish: 'Pineapple Slice and Cherry'
+    },
+    glass: 'Hurricane',
+    description: 'The ultimate tropical cocktail, enjoyed on beaches and cruises all around the world, creamy and satisfying'
+  },
+  {
+    name: 'Aviation',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668545188/CocktailPictures/Aviation_scfg3i.jpg',
+    spirits: ['Gin', 'Maraschino Liquor', 'Creme de Violette'],
+    dominant_flavours: ['Gin', 'Floral'],
+    type: 'Martini Cocktail',
+    flavour_notes: ['Gin', 'Lemon', 'Floral'],
+    preparation: 'Shaken & Strained',
+    recipe: {
+      sour: '20 ml Lemon Juice',
+      sweet: '2 ml Simple Syrup',
+      strong: '50 ml Gin & 5ml Creme de Violette',
+      weak: 'N/A',
+      garnish: 'Cherry'
+    },
+    glass: 'Martini Glass',
+    description: 'Alluring cocktail with a violette hue with intricate floral notes and a strong finish'
+  },
+  {
+    name: 'New York Sour',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668546254/CocktailPictures/NewYorkSour_zo0suw.jpg',
+    spirits: ['Whiskey', 'Red Wine'],
+    dominant_flavours: ['Whiskey', 'Red Wine'],
+    type: 'Sour',
+    flavour_notes: ['Whiskey', 'Lemon', 'Red Wine'],
+    preparation: 'Shaken & Strained',
+    recipe: {
+      sour: '25ml Lemon Juice',
+      sweet: '20ml Simple Syrup',
+      strong: '50ml Whiskey & Float Red Wine',
+      weak: 'Egg White',
+      garnish: 'No Garnish'
+    },
+    glass: 'Rocks Glass',
+    description: 'A variation on the whiskey sour, looks gorgeous in the glass and very fun to drink, zesty and also a bit fruity'
+  },
+  {
+    name: 'Cuba Libre',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668546660/CocktailPictures/CubaLibre_xxi9sy.jpg',
+    spirits: ['Rum'],
+    dominant_flavours: ['Rum', 'Coke'],
+    type: 'Longdrink',
+    flavour_notes: ['Rum', 'Coca Cola', 'Lime'],
+    preparation: 'Built',
+    recipe: {
+      sour: '25ml Lime Juice',
+      sweet: '15ml Simple Syrup',
+      strong: '50ml Rum',
+      weak: 'Coca Cola',
+      garnish: 'Lime Wheel'
+    },
+    glass: 'Highball',
+    description: 'Simple yet delicious and easy to make at home, the timeless combination of rum and coke with a bit of lime!'
+  },
+  {
+    name: 'Negroni',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668546999/CocktailPictures/Negroni_urtj7x.webp',
+    spirits: ['Gin', 'Sweet Vermouth', 'Campari'],
+    dominant_flavours: ['Gin', 'Campari'],
+    type: 'Classic Cocktail',
+    flavour_notes: ['Gin', 'Bitter', 'Campari'],
+    preparation: 'Stirred',
+    recipe: {
+      sour: 'N/A',
+      sweet: 'N/A',
+      strong: '35ml Gin, 35ml Campari, 35ml Sweet Vermouth',
+      weak: 'Water',
+      garnish: 'Orange Zest'
+    },
+    glass: 'Rocks Glass',
+    description: 'The italian maestro, an unforgettable combination of sweet, bitter and strong.'
+  },
+  {
+    name: 'Vodka Martini',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668547296/CocktailPictures/VodkaMartini_kz8c1w.jpg',
+    spirits: ['Vodka', 'Dry Vermouth'],
+    dominant_flavours: ['Gin', 'Dry Vermouth'],
+    type: 'Martini Cocktail',
+    flavour_notes: ['Gin', 'Strong', 'Zesty'],
+    preparation: 'Stirred',
+    recipe: {
+      sour: 'N/A',
+      sweet: 'N/A',
+      strong: '60ml Vodka 10ml Dry Vermouth',
+      weak: 'Water',
+      garnish: 'Lemon Zest'
+    },
+    glass: 'Martini Glass',
+    description: 'The most iconic of cocktails, a simple mix of vodka and vermouth makes for a super strong drink with a lot of history.'
+  },
+  {
+    name: 'Espresso Martini',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668547574/CocktailPictures/EspressoMartini_j6gaqe.jpg',
+    spirits: ['Vodka', 'Kahlua'],
+    dominant_flavours: ['Vodka', 'Coffee'],
+    type: 'Martini Cocktail',
+    flavour_notes: ['Coffee', 'Vodka', 'Creamy'],
+    preparation: 'Shaken & Strained',
+    recipe: {
+      sour: 'N/A',
+      sweet: '20ml Vanilla Syrup',
+      strong: '50ml Vodka & 25ml Kahlua',
+      weak: '50ml Coffee',
+      garnish: '3 Coffee Beans'
+    },
+    glass: 'Martini Glass',
+    description: 'You HAVE to try this drink, frothy, full-bodied, sweet and soooooo good!'
+  },
+  {
+    name: 'Sazerac',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668547812/CocktailPictures/Sazerac_ofwhub.jpg',
+    spirits: ['Whiskey', 'Cognac', 'Bitters', 'Absinthe'],
+    dominant_flavours: ['Whiskey', 'Cognac'],
+    type: 'Classic Cocktail',
+    flavour_notes: ['Whiskey', 'Cognac', 'Bitters'],
+    preparation: 'Stirred',
+    recipe: {
+      sour: 'N/A',
+      sweet: '10ml Sugar Syrup',
+      strong: '40ml Whiskey & 40ml Cognac, 3 Dashes of Peychauds Bitters',
+      weak: 'Water',
+      garnish: 'Spritz of Absinthe and Lemon Zest'
+    },
+    glass: 'Rocks Glass',
+    description: 'Originally from New Orleans this Mardi Grass staple has been around for a long time and is still kicking it with the best.'
+  },
+  {
+    name: 'Sidecar',
+    image_path:'https://res.cloudinary.com/dpsujem4q/image/upload/v1668548079/CocktailPictures/sidecar_q0pehj.webp',
+    spirits: ['Cognac', 'Cointreau'],
+    dominant_flavours: ['Orange', 'Cognac'],
+    type: 'Martini Cocktail',
+    flavour_notes: ['Cognac', 'Orange'],
+    preparation: 'Shaken & Strained',
+    recipe: {
+      sour: '25ml Lemon Juice',
+      sweet: '5ml Simple Syrup',
+      strong: '50ml Cognac & 25ml Cointreau',
+      weak: 'N/A',
+      garnish: 'Sugar Rim'
+    },
+    glass: 'Martini Glass',
+    description: 'A variation on the brandy crusta, refreshing and zesty, lovely sour note and warm finish.'
   }
-
-
 ]

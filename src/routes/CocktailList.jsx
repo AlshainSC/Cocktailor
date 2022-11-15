@@ -9,7 +9,7 @@ function CocktailList() {
 
 
   function anotherRandomCocktail() {
-    setOneRandomCocktail([cocktails[Math.floor(Math.random() * cocktails.length-1)]])
+    setOneRandomCocktail([cocktails[Math.floor(Math.random() * 21)]])
   }
 
   function onLeftClick () {
@@ -22,30 +22,30 @@ function CocktailList() {
 
 
 if (selectedCocktails.length && mixItUpPressed) {
-  return(
+  return (
     <div className="listOfCocktails">
-      <button className="leftArrow" onClick={onLeftClick}>←</button>
         {selectedCocktails.map((cocktail) => <CocktailCard item={cocktail} key={cocktail._id}/>)}
-      <button className="rightArrow" onClick={onRightClick}>→</button>
     </div>
   )} else if (randomButtonPressed) {
   return (
     <div className="listOfOneCocktails">
-       {oneRandomCocktail.map((cocktail) => <CocktailCard item={cocktail} key={cocktail._id}/>)}
-
+        {oneRandomCocktail.map((cocktail) => <CocktailCard item={cocktail} key={cocktail._id}/>)}
         <button type="button" id="anotherOneButton" onClick={() => anotherRandomCocktail()}>Another One!</button>
-
     </div>
   )} else if (myFavourites.length && !selectedCocktails.length) {
     return (
       <div className="listOfCocktails">
-      <button className="leftArrow" onClick={onLeftClick}>←</button>
         {myFavourites.map((cocktail) => <CocktailCard item={cocktail} key={cocktail._id}/>)}
-      <button className="rightArrow" onClick={onRightClick}>→</button>
     </div>
-    )
+    )} else {
+      return (
+        <div className="listOfCocktails">
+        <h1>You Shouldn't Be Here!</h1>
+      </div>
+      )
+    }
   }
-}
+
 
 export default CocktailList
 

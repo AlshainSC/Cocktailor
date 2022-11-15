@@ -8,8 +8,18 @@ function Cocklection() {
 
   return (
     <div className="listOfCocktails">
-    {cocktails.map((el) =>
+    <div className="rowOne">
+    {cocktails.slice(0,7).map((el) =>
       <CocktailCard item={el}/>)}
+    </div>
+    <div className="rowOne">
+    {cocktails.slice(7,14).map((el) =>
+      <CocktailCard item={el}/>)}
+    </div>
+    <div className="rowOne">
+    {cocktails.slice(14,21).map((el) =>
+      <CocktailCard item={el}/>)}
+    </div>
     </div>
   )
 }

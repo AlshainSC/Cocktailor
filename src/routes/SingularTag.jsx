@@ -15,7 +15,7 @@ function tagClick () {
   return (
     <div>
     <div className={tagPressed ? "pressedTag" : "singularTag"} onClick={tagClick}>
-      <h1>{tag.toUpperCase()}</h1>
+      <h1 id="tags">{tag.toUpperCase()}</h1>
     </div>
     </div>
   )

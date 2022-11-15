@@ -25,7 +25,7 @@ function handleRandomClick() {
     <button type="button" name="mixItUp" id="mixItUp" onClick={handleMixClick}>Mix it up!</button>
     </Link>
     <Link to="/cocktaillist">
-    <button type="button" name="surpriseMe" id="mixItUp" onClick={handleRandomClick}>Surprise Me</button>
+    <button type="button" name="surpriseMe" id="mixItUp" onClick={handleRandomClick}>Surprise Me!</button>
     </Link>
     </div>
     </div>

@@ -10,11 +10,11 @@ export default function Root() {
   const { showDropdown, setShowDropdown, setSelectedCocktails, setMixItUpPressed, setRandomButtonPressed } = useCocktailContext()
 
   function normalState() {
-
+    setShowDropdown(!showDropdown);
     setSelectedCocktails([]);
     setMixItUpPressed(false);
     setRandomButtonPressed(false);
-    
+
   }
 
   const navigationItems = [

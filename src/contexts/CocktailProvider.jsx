@@ -23,7 +23,7 @@ export default function CocktailProvider({children}){
     const uniqueFetchedTags = [...new Set([].concat(...fetchedTags))]
     setAllTags(uniqueFetchedTags)
     const randomCocktail = [...items]
-    const justTheOne = [randomCocktail[Math.floor(Math.random() * items.length-1)]]
+    const justTheOne = [randomCocktail[Math.floor(Math.random() * 21)]]
     setOneRandomCocktail(justTheOne)
 
 
