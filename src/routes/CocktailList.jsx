@@ -5,21 +5,12 @@ import { Link } from 'react-router-dom';
 
 function CocktailList() {
 
-  const { selectedCocktails, cocktails, mixItUpPressed, setMixItUpPressed, myFavourites, setMyFavourites, randomButtonPressed, setRandomButtonPressed, oneRandomCocktail, setOneRandomCocktail } = useCocktailContext()
+  const { selectedCocktails, cocktails, mixItUpPressed, myFavourites, randomButtonPressed, oneRandomCocktail, setOneRandomCocktail } = useCocktailContext()
 
 
   function anotherRandomCocktail() {
     setOneRandomCocktail([cocktails[Math.floor(Math.random() * 21)]])
   }
-
-  function onLeftClick () {
-
-  }
-
-  function onRightClick () {
-
-  }
-
 
 if (selectedCocktails.length && mixItUpPressed) {
   return (
@@ -40,7 +31,7 @@ if (selectedCocktails.length && mixItUpPressed) {
     )} else {
       return (
         <div className="listOfCocktails">
-        <h1>You Shouldn't Be Here!</h1>
+        <h1 id="ifEmpty">Choose Some Favorites in Cocklection First!</h1>
       </div>
       )
     }

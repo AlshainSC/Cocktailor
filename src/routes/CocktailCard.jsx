@@ -72,7 +72,7 @@ function CocktailCard( { item } ) {
       </div>
         <div className="recipeContainer">
         <ul>
-        <h6 id="recipe"><u>Recipe</u>:</h6>
+        <i><h6 id="recipe"><u>Recipe</u>:</h6></i>
         <li><i>Sour</i> : {item.recipe.sour}</li>
         <li><i>Sweet</i> : {item.recipe.sweet}</li>
         <li><i>Strong</i> : {item.recipe.strong}</li>

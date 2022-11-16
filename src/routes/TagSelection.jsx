@@ -4,9 +4,14 @@ import { useCocktailContext } from '../contexts/CocktailProvider'
 
 function TagSelection( ) {
 
-const { allTags, selectedCocktails, setSelectedCocktails, cocktails, mixItUpPressed, setMixItUpPressed, randomButtonPressed, setRandomButtonPressed } = useCocktailContext()
+const { allTags, selectedCocktails, setSelectedCocktails, cocktails, mixItUpPressed, setMixItUpPressed, randomButtonPressed, setRandomButtonPressed, selectedTags } = useCocktailContext()
 
 function handleMixClick() {
+  let newArr = [...selectedCocktails]
+  for (let i = 0; i < selectedTags.length; i++) {
+  newArr.push(cocktails.filter((el) => el.flavour_notes.includes(selectedTags[i])))
+  }
+  setSelectedCocktails([...new Set([].concat(...newArr))])
   setMixItUpPressed(!mixItUpPressed);
 }
 
@@ -18,7 +23,7 @@ function handleRandomClick() {
   return (
     <div>
     <div className="tagContainer">
-      {allTags.map((el) => <SingularTag tag={el} selectedCocktails={selectedCocktails} setSelectedCocktails={setSelectedCocktails} cocktails={cocktails} /> )}
+      {allTags.map((el) => <SingularTag tag={el} /> )}
     </div>
     <div className="tagButtons">
     <Link to="/cocktaillist">

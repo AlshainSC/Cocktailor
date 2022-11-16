@@ -13,6 +13,7 @@ export default function CocktailProvider({children}){
   const [oneRandomCocktail, setOneRandomCocktail] = useState([]);
   const [randomButtonPressed, setRandomButtonPressed] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [selectedTags, setSelectedTags] = useState([]);
 
   async function getAndSet (){
 
@@ -36,7 +37,7 @@ export default function CocktailProvider({children}){
   }, [] )
 
   return (
-    <CocktailContext.Provider value={{cocktails, setCocktails, allTags, setAllTags, selectedCocktails, setSelectedCocktails, myFavourites, setMyFavourites, randomButtonPressed, setRandomButtonPressed, mixItUpPressed, setMixItUpPressed, showDropdown, setShowDropdown, oneRandomCocktail, setOneRandomCocktail }}>
+    <CocktailContext.Provider value={{cocktails, setCocktails, allTags, setAllTags, selectedCocktails, setSelectedCocktails, myFavourites, setMyFavourites, randomButtonPressed, setRandomButtonPressed, mixItUpPressed, setMixItUpPressed, showDropdown, setShowDropdown, oneRandomCocktail, setOneRandomCocktail, selectedTags, setSelectedTags }}>
       {children}
     </CocktailContext.Provider>
 

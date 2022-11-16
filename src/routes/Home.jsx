@@ -12,7 +12,7 @@ function LandingPage() {
 
     </div>
     <Link to="tagselection">
-    <button type="button" className="startButton">BOTTOMS UP!</button>
+    <button type="button" className="startButton">Bottoms Up!</button>
     </Link>
     </div>
 

@@ -7,10 +7,11 @@ import { useCocktailContext } from '../contexts/CocktailProvider'
 export default function Root() {
 
 
-  const { showDropdown, setShowDropdown, setSelectedCocktails, setMixItUpPressed, setRandomButtonPressed } = useCocktailContext()
+  const { showDropdown, setShowDropdown, setSelectedCocktails, setMixItUpPressed, setRandomButtonPressed, setSelectedTags } = useCocktailContext()
 
   function normalState() {
     setShowDropdown(!showDropdown);
+    setSelectedTags([]);
     setSelectedCocktails([]);
     setMixItUpPressed(false);
     setRandomButtonPressed(false);
@@ -47,8 +48,7 @@ export default function Root() {
     <div className="mainContainer">
     <h1 id="cocktailorTitle">COCKTAILOR</h1>
       <Outlet />
-    <hr className="divider"></hr>
-    <footer></footer>
+ 
     </div>
     </>
   );
