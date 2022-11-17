@@ -7,7 +7,7 @@ function MyFavorites() {
 
   return (
     <div className="favourites">
-    <CocktailList />
+      <CocktailList />
     </div>
   )
 }
