@@ -7,27 +7,23 @@ import LandingPage from '../../src/routes/Home.jsx'
 
 
 describe('Landing page', () => {
-  it('Landing page renders successfuly', () => {
+
+  beforeEach(() => {
     mount(
       <Router>
-        <>
           <LandingPage/>
-        </>
       </Router>
       );
+  })
+
+  it('Landing page renders successfuly', () => {
     
     cy.get('h3').should('be.visible');
     cy.get('h3').should('contain.text', 'Are You Unsure About What To Order At Your Favourite Bar?');
   })
 
   it('Start button successfuly routes user to tag selection', () => {
-    mount(
-      <Router>
-        <>
-          <LandingPage/>
-        </>
-      </Router>);
-
+    
     cy.contains('Bottoms Up!').click().location('pathname').should('equal', '/tagselection')
   });
 })

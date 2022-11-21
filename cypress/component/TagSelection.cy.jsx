@@ -1,19 +1,35 @@
 import React from 'react';
 import { BrowserRouter as Router, MemoryRouter } from 'react-router-dom'
 import TagSelection from '../../src/routes/TagSelection.jsx'
-import { useCocktailContext } from '../../src/contexts/CocktailProvider.jsx';
+import CocktailContext from '../../src/contexts/CocktailProvider.jsx';
 
-const cocktails = ['manhattan', 'negroni', 'whiskey', 'vodka']
 
-describe('TagSelection.cy.jsx', () => {
-  it('Tag selectors render successfully', () => {
-    
+describe('Tag selection', () => {
+
+  beforeEach(() => {
     cy.mount(
-      <useCocktailContext.Provider >
+      <Router>
+        <CocktailContext>
           <TagSelection />
-      </useCocktailContext.Provider>
+        </CocktailContext>
+      </Router>
     );
-    
-    
   })
+
+  it('Tag selectors render successfully', () => {
+    cy.get('#tags').should('be.visible');
+    cy.get('.singularTag').should('contain.html', 'h1')
+  })
+
+  it('Tags should be clickable', () => {
+    cy.get('.singularTag').click({multiple: true})
+  });
+
+  it('Mix it up button should work', () => {
+    cy.contains('Mix it up!').click().location('pathname').should('equal', '/cocktaillist')
+  })
+
+  it('Surprise me button should generate a random cocktail', () => {
+    cy.contains('Surprise Me!').click().location('pathname').should('equal', '/cocktaillist')
+  });
 })
