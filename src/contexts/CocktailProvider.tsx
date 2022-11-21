@@ -1,16 +1,16 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { getAllCocktails } from '../services/services';
 import { Cocktail } from '../Types/Type';
-
+// Your Butt
 interface Props {
   cocktails: Cocktail[];
   setCocktails: React.Dispatch<React.SetStateAction<Cocktail[]>>;
   allTags: string[];
   setAllTags: React.Dispatch<React.SetStateAction<string[]>>;
   selectedCocktails: Cocktail[];
-  setSelectedCocktails:  React.Dispatch<React.SetStateAction<Cocktail[]>>;
+  setSelectedCocktails: React.Dispatch<React.SetStateAction<Cocktail[]>>;
   myFavourites: Cocktail[];
-  setMyFavourites: React.Dispatch<React.SetStateAction<Cocktail[]>>
+  setMyFavourites: React.Dispatch<React.SetStateAction<Cocktail[]>>;
   randomButtonPressed: boolean;
   setRandomButtonPressed: React.Dispatch<React.SetStateAction<boolean>>;
   mixItUpPressed: boolean;
