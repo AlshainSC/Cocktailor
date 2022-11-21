@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { getAllCocktails } from '../services/services';
 import { Cocktail } from '../Types/Type';
-
+//butt
 interface Props {
   cocktails: Cocktail[];
   setCocktails: React.Dispatch<React.SetStateAction<Cocktail[]>>;
